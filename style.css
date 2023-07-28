@@ -102,3 +102,11 @@ main{
 }
 
 /* Resume CSS Code */
+
+.resume{
+    width: 100%;
+    height: 50px;
+}
+
+.resume h1{
+}
