@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Resume Builder</title>
 </head>
 <body>
     <header>
-        <h1>The Awesome Resume Builder!!</h1>
+        <h1>The Awesome Resume Builder !!</h1>
     </header>
     <main>
         <div class="inner-container">
@@ -50,16 +49,20 @@
             </div>
             <div class="qualification-container">
                 <p>Qualification:</p>
-                <input type="text" placeholder="Qualification">
+                <div id="qc">
+                    <input type="text" placeholder="Qualification">
+                </div>
                 <div class="btn-grp">
-                    <button>Add</button>
+                    <button onclick="AddQual()">Add</button>
                 </div>
             </div>
             <div class="qualification-container">
                 <p>Work Experience:</p>
-                <input type="text" placeholder="Work Experience">
+                <div id="we">
+                    <input type="text" placeholder="Work Experience">
+                </div>
                 <div class="btn-grp">
-                    <button>Add</button>
+                    <button onclick="AddWexp()">Add</button>
                 </div>
             </div>
         </div>

@@ -7,15 +7,16 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-header{
+header{ 
     width: 100%;
     text-align: center; 
     padding: 20px;
-    background: cornflowerblue;
+    background: black;
 }
 
 header h1{    
     font-family: 'Oswald', sans-serif;
+    color: white;
 }
 main{
     display: flex;
@@ -90,4 +91,12 @@ main{
     width: 20%;
     height: 40px;
     font-size: 2.5vmin;
+}
+
+#qc input{
+    margin: 10px 0;
+}
+
+#we input{
+    margin: 10px 0;
 }
