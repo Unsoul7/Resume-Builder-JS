@@ -9,5 +9,7 @@ const AddWexp = () => {
 }
 
 const generateres = () => {
-    
+    var cl = document.getElementById("res").classList
+    document.getElementById("res").classList = cl + "resume-hide"
+
 } 
