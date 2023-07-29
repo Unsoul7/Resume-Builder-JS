@@ -8,8 +8,7 @@ const AddWexp = () => {
     document.getElementById("we").innerHTML = qualtag + '<input type="text" placeholder="Qualification">';
 }
 
-const generateres = () => {
-    var cl = document.getElementById("res").classList
-    document.getElementById("res").classList = cl + "resume-hide"
-
-} 
+// const generateres = () => {
+//     var cl = document.getElementById("res").classList
+//     document.getElementById("res").classList = cl + "resume-hide"
+// } 

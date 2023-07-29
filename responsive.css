@@ -1,0 +1,30 @@
+@media only screen and (max-width:400px) {
+
+    header h1 {
+        font-size: 4vmax;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .inner-container {
+        padding: 0 3vmax;
+    }
+
+    .inner-container input {
+        font-size: 3vmin;
+    }
+
+    .inner-container p {
+        font-size: 4vmin;
+    }
+
+    #generate-btn button {
+        width: 40%;
+        font-size: 3.5vmin;
+        background: #000;
+        color: white;
+        border: none;
+    }
+}
