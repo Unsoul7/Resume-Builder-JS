@@ -27,4 +27,9 @@
         color: white;
         border: none;
     }
+    
+    .inner-container textarea{
+        font-size: 3vmin;
+    }
+
 }
