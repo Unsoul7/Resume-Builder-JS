@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Resume Builder</title>
 </head>
@@ -19,40 +18,40 @@
             <h2>Personal Information:</h2>
             <div>
                 <p>Enter Name</p>
-                <input type="text" placeholder="Enter Name">
+                <input type="text" id="name" placeholder="Enter Name">
             </div>
             <div>
                 <p>Enter Phone Number</p>
-                <input type="text" placeholder="Phone Number">
+                <input type="text" id="phone" placeholder="Phone Number">
             </div>
             <div>
                 <p>Enter Address</p>
-                <textarea id="" cols="53" rows="5"></textarea>
+                <textarea id="address" cols="53" rows="5"></textarea>
             </div>
             <h2>Important Links:</h2>
             <div>
                 <p>Instagram:</p>
-                <input type="text" placeholder="Instagram Handle">
+                <input type="text" id="ih" placeholder="Instagram Handle">
             </div>
             <div>
                 <p>Facebook:</p>
-                <input type="text" placeholder="Facebook Handle">
+                <input type="text" id="fh" placeholder="Facebook Handle">
             </div>
             <div>
                 <p>Linkedin:</p>
-                <input type="text" placeholder="Linkedin ID">
+                <input type="text" id="lh" placeholder="Linkedin ID">
             </div>
         </div>
         <div class="inner-container">
             <h2>Professional Information:</h2>
             <div>
                 <p>Objective:</p>
-                <input type="text" placeholder="Objective">
+                <input type="text" id="obj" placeholder="Objective">
             </div>
             <div class="qualification-container">
                 <p>Qualification:</p>
                 <div id="qc">
-                    <input type="text" placeholder="Qualification">
+                    <input type="text" class="qc-value" placeholder="Qualification">
                 </div>
                 <div class="btn-grp">
                     <button onclick="AddQual()">Add</button>
@@ -61,7 +60,7 @@
             <div class="qualification-container">
                 <p>Work Experience:</p>
                 <div id="we">
-                    <input type="text" placeholder="Work Experience">
+                    <input type="text" class="we-value" placeholder="Work Experience">
                 </div>
                 <div class="btn-grp">
                     <button onclick="AddWexp()">Add</button>
@@ -72,5 +71,37 @@
     <div id="generate-btn" >
         <button onclick="generateres()">Generate Resume</button>
     </div>
+
+    <div class="resume-show" id="res1">
+        <hr>
+        <h1 style="margin: 20px; text-align: center;">Resume</h1>
+        <div class="resume-done">
+            <div class="container">
+                <h1 id="r-name"></h1>
+                <p id="r-phone"></p>
+                <p id="r-address"></p>
+            </div>
+            <div class="container">
+                <h2>Objective:</h2>
+                <p id="r-objective"></p>
+                <h2>Qualification:</h2>
+                <ul id="r-qualification">
+    
+                </ul>
+                <h2>Work Experience:</h2>
+                <ul id="r-work-experience">
+        
+                </ul>
+            </div>
+            <div class="container">
+                <h2>Social Links:</h2>
+                <ul id="sls">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
 </body>
+
 </html>

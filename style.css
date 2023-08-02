@@ -98,24 +98,10 @@ main{
 
 /* Resume CSS Code */
 
-.resume{
+.resume-show{
+    display: none;
     width: 100%;
     height: 50px;
-}
-
-.resume h1{
-    margin: 0 30px;
-}
-
-
-.resume-hide{
-    display: block;
-}
-
-.resume h1{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 20px 0;
 }
 
 .resume-done{
@@ -123,14 +109,21 @@ main{
     width: 98%;
     border: 1px solid black;
     margin: 0 auto;
+    padding: 60px;
 }
 
-aside{
-    background:cadetblue;
-    position: absolute;
-    height: 100%;
-    width: 30%;
-    bottom: 0;
-    margin: 0 3rem;
-    padding: 0 2rem;
+.container{
+    width: 100%;
 }
+
+.container h2{
+    margin: 20px 0;
+}    
+
+.container ul{
+    margin: 10px 0;
+}    
+
+.container ul li{
+    padding: 5px 0;
+}    
