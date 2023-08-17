@@ -1,11 +1,17 @@
 const AddQual = () => {
-    qualtag = document.getElementById("qc").innerHTML;
-    document.getElementById("qc").innerHTML = qualtag + '<input type="text" class="qc-value" placeholder="Qualification">';
+    const qcfield = document.createElement('input')
+    qcfield.setAttribute('type','text')
+    qcfield.setAttribute('class','we-value')
+    qcfield.setAttribute('placeholder','Work Experience')
+    document.getElementById("qc").appendChild(qcfield);
 }
 
 const AddWexp = () => {
-    qualtag = document.getElementById("we").innerHTML;
-    document.getElementById("we").innerHTML = qualtag + '<input type="text" class="we-value" placeholder="Work Experience">';
+    const wefield = document.createElement('input')
+    wefield.setAttribute('type','text')
+    wefield.setAttribute('class','we-value')
+    wefield.setAttribute('placeholder','Work Experience')
+    document.getElementById("we").appendChild(wefield);
 }
 
 const generateres = () => {
